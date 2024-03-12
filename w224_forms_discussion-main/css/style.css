@@ -1,5 +1,10 @@
   /* Create an accessible color palette using var()function */
   /* https://www.w3schools.com/css/css3_variables.asp */
+  :root {
+    --purple: #d1ceef;
+    --white: #f8f5f5;
+    --blue: #1c3859;
+  }
   
   form {
     display: grid;
@@ -10,23 +15,26 @@
     margin: 20px auto;
     padding: 20px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    color: #702082;
-    background: #CFC096;
+    color: var(--blue);
+    background: var(--purple);
+    font-family: "avory-i-pe-variable", sans-serif;
   }
 
   .radio {
     grid-column-start: 1;
     grid-column-end: 3;
     /* background: #575294; */
-    color: #702082;
+    color: var(--blue);
+    font-family: "avory-i-pe-variable", sans-serif;
   }
+
 
   #name {
     width: 100%;
     padding: 10px;
     font-size: 18px;
     font-weight: bold;
-    background: #CFC096;
+    background: var(--white);
     color: #9B9A6D;
   }
 
